@@ -1,4 +1,6 @@
 <% if @photo.errors.present?%>
+
+  <p class="errors">We have errors !</p>
   <ul>
         <% @photo.errors.each do |error, message|%>
           <li> <%= "#{error.capitalize}  #{message}" %></li>
